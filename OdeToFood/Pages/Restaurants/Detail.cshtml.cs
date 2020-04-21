@@ -14,6 +14,7 @@ namespace OdeToFood.Pages.Restaurants
         public void OnGet()
         {
             Restaurant = new Restaurant();
+
         }
     }
 }
