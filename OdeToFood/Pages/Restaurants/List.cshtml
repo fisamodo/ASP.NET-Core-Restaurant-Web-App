@@ -1,4 +1,4 @@
-﻿@page "{restaurantId:int}"
+﻿@page 
 
 @model OdeToFood.Pages.Restaurants.ListModel
 @{
@@ -16,20 +16,22 @@
 </form>
 
 <table class="table">
-        @foreach(var restaurant in Model.Restaurants)
-        {
-            <tr>
-                <td>@restaurant.Name</td>
-                <td>@restaurant.Location</td>
-                <td>@restaurant.Cuisine</td>
-                <td>
-                    <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
-                        <i class="btn btn-outline-success">Details</i>
-                    </a>
-                </td>
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cuisine</td>
+            <td>
+                <a class="btn btn-lg"
+                   asp-page="./Detail" 
+                   asp-route-restaurantId="@restaurant.Id">
+                    <i class="btn btn-outline-success">Details</i>
+                </a>
+            </td>
 
-            </tr>
-        }
+        </tr>
+    }
 </table>
 
 
