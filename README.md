@@ -1,5 +1,5 @@
 # ASP.NET-Core-Restaurant-Web-App
-Teaching ASP.NET Core Fundamentals on Scott Allen's Course
+Learning ASP.NET Core Fundamentals on Scott Allen's Course
  
 Using razor pages we implemented CRUD Functionality as well as setting up EF Database on local db using VisualStudio database.
 
